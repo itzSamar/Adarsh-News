@@ -1,0 +1,10 @@
+# Python / Ollama (not deployed to GitHub Pages)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adarsh News Outlet — The King of San Ramon</title>
+  <meta name="description" content="Breaking news, exclusive reports, and daily coverage of Adarsh Upadhyaya, 9th grader at Quarry Lane High School and undisputed King of San Ramon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span class="date-display" id="today-date"></span>
+      <span class="tagline">Serving San Ramon Since Day One</span>
+      <span class="edition">Vol. I · Daily Edition</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="masthead">
+        <p class="masthead-kicker">The Only Paper That Matters</p>
+        <h1 class="site-title">The Adarsh News Outlet</h1>
+        <p class="site-subtitle">Exclusive Coverage of Adarsh Upadhyaya · Quarry Lane High School · The King of San Ramon</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#featured" class="nav-link active">Front Page</a>
+        <a href="#latest" class="nav-link">Latest</a>
+        <a href="#about" class="nav-link">About the King</a>
+        <a href="#archive" class="nav-link">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="featured" class="featured-section" aria-labelledby="featured-heading">
+      <h2 id="featured-heading" class="sr-only">Featured Story</h2>
+      <article class="featured-article" id="featured-article">
+        <div class="loading">Loading today's headline…</div>
+      </article>
+    </section>
+
+    <div class="content-grid">
+      <section id="latest" class="latest-section" aria-labelledby="latest-heading">
+        <h2 id="latest-heading" class="section-title">Latest Headlines</h2>
+        <div class="story-list" id="story-list"></div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="sidebar-box about-preview" id="about">
+          <h3>About the Subject</h3>
+          <p><strong>Adarsh Upadhyaya</strong> is a 9th-grade student at Quarry Lane High School and the reigning <em>King of San Ramon</em> — a title conferred by neighborhood consensus, cafeteria witnesses, and at least one overheard group chat.</p>
+          <p class="sidebar-note">This outlet provides rigorous, daily journalism on His Majesty's activities, opinions, and legendary status.</p>
+        </div>
+
+        <div class="sidebar-box stats-box">
+          <h3>By the Numbers</h3>
+          <ul class="stats-list">
+            <li><span class="stat-num" id="story-count">—</span><span class="stat-label">Stories Published</span></li>
+            <li><span class="stat-num">SR</span><span class="stat-label">Royal Domain</span></li>
+            <li><span class="stat-num">9th</span><span class="stat-label">Grade Level</span></li>
+            <li><span class="stat-num">∞</span><span class="stat-label">Legend Status</span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box categories-box">
+          <h3>Sections</h3>
+          <ul class="category-list" id="category-list"></ul>
+        </div>
+      </aside>
+    </div>
+
+    <section id="archive" class="archive-section" aria-labelledby="archive-heading">
+      <h2 id="archive-heading" class="section-title">Full Archive</h2>
+      <div class="archive-grid" id="archive-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> The Adarsh News Outlet. All stories are satirical fan journalism.</p>
+      <p class="footer-note">Quarry Lane High School · San Ramon, CA · Kingdom of San Ramon</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
