@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    const res = await fetch(NewsSite.url('data/lore.json'));
+    const res = await fetch(NewsSite.asset('data/lore.json'));
     if (!res.ok) throw new Error(String(res.status));
     const data = await res.json();
 

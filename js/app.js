@@ -1,5 +1,5 @@
 /**
- * Front page — real San Ramon wire + satirical Adarsh stories
+ * Main page: Patch wire + satirical stories + Adarsh podcast
  */
 
 const CATEGORY_LABELS = {
@@ -155,11 +155,86 @@ function pickFeatured(stories) {
   return stories.find(s => s.date === today) || stories[0];
 }
 
+let podcastEpisodes = [];
+
+function renderPodcastFeatured(ep) {
+  const el = document.getElementById('podcast-featured');
+  if (!el || !ep) return;
+
+  const audioSrc = ep.audio_file ? NewsSite.asset(ep.audio_file) : null;
+
+  el.innerHTML = `
+    <article class="podcast-feature">
+      <div class="story-meta">
+        <span class="story-category">Episode ${ep.episode}</span>
+        <span class="story-date">${NewsSite.escapeHtml(NewsSite.formatDate(ep.date))}</span>
+      </div>
+      <h3 class="podcast-ep-title">${NewsSite.escapeHtml(ep.title)}</h3>
+      <p class="featured-dek">${NewsSite.escapeHtml(ep.description)}</p>
+      ${
+        audioSrc
+          ? `<audio class="podcast-player" controls preload="metadata" src="${audioSrc}">Your browser does not support audio.</audio>`
+          : `<p class="episode-pending">Audio coming soon for this episode.</p>`
+      }
+    </article>`;
+}
+
+function renderPodcastList(episodes, activeId) {
+  const el = document.getElementById('podcast-list');
+  if (!el) return;
+
+  el.innerHTML = episodes
+    .map(ep => {
+      const ready = ep.status === 'ready' && ep.audio_file;
+      const active = ep.id === activeId ? ' podcast-item--active' : '';
+      return `
+        <button type="button" class="podcast-item${active}" data-ep-id="${NewsSite.escapeHtml(ep.id)}">
+          <span class="ep-num">${ep.episode}</span>
+          <span class="ep-info">
+            <strong>${NewsSite.escapeHtml(ep.title)}</strong>
+            <small>${ready ? 'Ready to play' : 'Coming soon'}</small>
+          </span>
+        </button>`;
+    })
+    .join('');
+
+  el.querySelectorAll('.podcast-item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const ep = episodes.find(e => e.id === btn.dataset.epId);
+      if (!ep) return;
+      renderPodcastFeatured(ep);
+      renderPodcastList(episodes, ep.id);
+    });
+  });
+}
+
+async function loadPodcast() {
+  const featuredEl = document.getElementById('podcast-featured');
+  if (!featuredEl) return;
+
+  try {
+    const res = await fetch(NewsSite.asset('data/adarsh_episodes.json'));
+    if (!res.ok) throw new Error('episodes ' + res.status);
+    const data = await res.json();
+    podcastEpisodes = (data.episodes || []).sort((a, b) => b.date.localeCompare(a.date));
+
+    const tagline = document.getElementById('podcast-tagline');
+    if (tagline) tagline.textContent = data.tagline || "The King's broadcast";
+
+    const current = podcastEpisodes.find(e => e.status === 'ready' && e.audio_file) || podcastEpisodes[0];
+    renderPodcastFeatured(current);
+    renderPodcastList(podcastEpisodes, current?.id);
+  } catch (err) {
+    console.error('Podcast load error:', err);
+    featuredEl.innerHTML = '<p class="loading">Could not load podcast episodes.</p>';
+  }
+}
+
 async function init() {
   try {
     const [storiesRes, patchRes] = await Promise.all([
-      fetch(NewsSite.url('data/stories.json')),
-      fetch(NewsSite.url('data/patch_news.json')),
+      fetch(NewsSite.asset('data/stories.json')),
+      fetch(NewsSite.asset('data/patch_news.json')),
     ]);
 
     if (!storiesRes.ok) throw new Error('stories.json ' + storiesRes.status);
@@ -172,24 +247,27 @@ async function init() {
     if (patchRes.ok) {
       const patch = await patchRes.json();
       renderRealNews(patch.items || []);
+    } else {
+      renderRealNews(data.patch_headlines || []);
     }
 
     if (!stories.length) {
       document.getElementById('featured-article').innerHTML =
         '<p class="loading">No stories yet.</p>';
-      return;
+    } else {
+      document.getElementById('story-count').textContent = stories.length;
+      const featured = pickFeatured(stories);
+      renderFeatured(featured);
+      renderStoryList(stories, featured.id);
+      renderArchive(stories, featured.id);
+      renderCategories(stories);
     }
 
-    document.getElementById('story-count').textContent = stories.length;
-    const featured = pickFeatured(stories);
-    renderFeatured(featured);
-    renderStoryList(stories, featured.id);
-    renderArchive(stories, featured.id);
-    renderCategories(stories);
+    await loadPodcast();
   } catch (err) {
     console.error(err);
     document.getElementById('featured-article').innerHTML =
-      '<p class="loading">Could not load stories. Check the browser console.</p>';
+      '<p class="loading">Could not load stories.</p>';
   }
 }
 

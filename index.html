@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Adarsh News Outlet — The King of San Ramon</title>
-  <meta name="description" content="Breaking news, exclusive reports, and daily coverage of Adarsh Upadhyaya, 9th grader at Quarry Lane High School and undisputed King of San Ramon.">
+  <meta name="description" content="San Ramon local news plus satirical coverage of Adarsh Upadhyaya, King of San Ramon.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,60 +25,54 @@
       <div class="masthead">
         <p class="masthead-kicker">The Only Paper That Matters</p>
         <h1 class="site-title">The Adarsh News Outlet</h1>
-        <p class="site-subtitle">Exclusive Coverage of Adarsh Upadhyaya · Quarry Lane High School · The King of San Ramon</p>
+        <p class="site-subtitle">Real San Ramon news · Satirical royal coverage · Adarsh podcast</p>
       </div>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-link" data-page="home">Front Page</a>
-        <a href="adarsh.html" class="nav-link" data-page="adarsh">Adarsh</a>
-        <a href="lore.html" class="nav-link" data-page="lore">Lore</a>
-        <a href="#latest" class="nav-link" data-page="home">Latest</a>
-        <a href="#about" class="nav-link" data-page="home">About</a>
+        <a href="index.html" class="nav-link" data-nav="home">News</a>
+        <a href="index.html#podcast" class="nav-link" data-nav="podcast">Podcast</a>
+        <a href="lore.html" class="nav-link" data-nav="lore">Lore</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="real-news" class="real-news-section" aria-labelledby="real-news-heading">
+    <section id="real-news" class="real-news-section">
       <div class="section-header-row">
-        <h2 id="real-news-heading" class="section-title">San Ramon Headlines</h2>
+        <h2 class="section-title">San Ramon Headlines</h2>
         <a class="wire-source" href="https://patch.com/california/sanramon" target="_blank" rel="noopener">Source: Patch San Ramon ↗</a>
       </div>
-      <p class="section-note">Real local news from San Ramon. Our royal coverage below is satirical fan journalism.</p>
+      <p class="section-note">Accurate local news from San Ramon. Satirical Adarsh stories are below.</p>
       <ul class="real-news-list" id="real-news-list">
         <li class="loading">Loading San Ramon wire…</li>
       </ul>
     </section>
 
-    <section id="featured" class="featured-section" aria-labelledby="featured-heading">
-      <h2 id="featured-heading" class="section-title">Royal Coverage <span class="section-sub">(Satirical)</span></h2>
+    <section id="featured" class="featured-section">
+      <h2 class="section-title">Royal Coverage <span class="section-sub">(Satirical · Adarsh Upadhyaya)</span></h2>
       <article class="featured-article" id="featured-article">
         <div class="loading">Loading today's headline…</div>
       </article>
     </section>
 
     <div class="content-grid">
-      <section id="latest" class="latest-section" aria-labelledby="latest-heading">
-        <h2 id="latest-heading" class="section-title">More Headlines</h2>
+      <section id="latest" class="latest-section">
+        <h2 class="section-title">More Headlines</h2>
         <div class="story-list" id="story-list"></div>
       </section>
 
       <aside class="sidebar">
         <div class="sidebar-box about-preview" id="about">
-          <h3>About the Subject</h3>
-          <p><strong>Adarsh Upadhyaya</strong> is a 9th-grade student at Quarry Lane High School and the reigning <em>King of San Ramon</em>. His rival <strong>Arjun Mehta</strong>, the <em>King of Dublin</em>, threatens the I-580 peace. <a href="lore.html">Read the full lore →</a></p>
-          <p class="sidebar-note">Watch the separate broadcast at <a href="adarsh.html">Adarsh →</a></p>
+          <h3>About the King</h3>
+          <p><strong>Adarsh Upadhyaya</strong> — 9th grader at Quarry Lane High School, <em>King of San Ramon</em>. Rival: <strong>Arjun Mehta</strong>, King of Dublin. <a href="lore.html">Full lore →</a></p>
         </div>
-
         <div class="sidebar-box stats-box">
           <h3>By the Numbers</h3>
           <ul class="stats-list">
-            <li><span class="stat-num" id="story-count">—</span><span class="stat-label">Stories Published</span></li>
+            <li><span class="stat-num" id="story-count">—</span><span class="stat-label">Stories</span></li>
             <li><span class="stat-num">SR</span><span class="stat-label">Royal Domain</span></li>
-            <li><span class="stat-num">9th</span><span class="stat-label">Grade Level</span></li>
-            <li><span class="stat-num">∞</span><span class="stat-label">Legend Status</span></li>
+            <li><span class="stat-num">9th</span><span class="stat-label">Grade</span></li>
           </ul>
         </div>
-
         <div class="sidebar-box categories-box">
           <h3>Sections</h3>
           <ul class="category-list" id="category-list"></ul>
@@ -86,16 +80,30 @@
       </aside>
     </div>
 
-    <section id="archive" class="archive-section" aria-labelledby="archive-heading">
-      <h2 id="archive-heading" class="section-title">Full Archive</h2>
+    <section id="podcast" class="podcast-section">
+      <h2 class="section-title">Adarsh Podcast</h2>
+      <p class="section-note podcast-tagline" id="podcast-tagline">The King's broadcast</p>
+      <div class="podcast-layout">
+        <div id="podcast-featured" class="podcast-featured">
+          <div class="loading">Loading podcast…</div>
+        </div>
+        <div class="podcast-sidebar">
+          <h3 class="podcast-list-heading">Episodes</h3>
+          <div id="podcast-list" class="podcast-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="archive" class="archive-section">
+      <h2 class="section-title">Full Archive</h2>
       <div class="archive-grid" id="archive-grid"></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> The Adarsh News Outlet. Satirical fan journalism — not real news.</p>
-      <p class="footer-note">Quarry Lane High School · San Ramon, CA · <a href="adarsh.html" class="footer-link">Adarsh broadcast →</a></p>
+      <p>&copy; <span id="year"></span> The Adarsh News Outlet · Satire + real Patch wire</p>
+      <p class="footer-note">Quarry Lane High School · San Ramon, CA</p>
     </div>
   </footer>
 
