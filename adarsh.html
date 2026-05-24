@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adarsh — The King's Broadcast</title>
+  <meta name="description" content="Adarsh — the official podcast and video broadcast about Adarsh Upadhyaya, King of San Ramon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙</text></svg>">
+</head>
+<body data-page="adarsh" class="adarsh-page">
+  <div class="top-bar adarsh-top">
+    <div class="container top-bar-inner">
+      <span class="date-display" id="today-date"></span>
+      <span class="tagline">The King's Broadcast</span>
+      <span class="edition">Podcast · Video</span>
+    </div>
+  </div>
+
+  <header class="site-header adarsh-header">
+    <div class="container">
+      <div class="masthead">
+        <p class="masthead-kicker">Separate from the newspaper · Same kingdom</p>
+        <h1 class="site-title adarsh-logo">Adarsh</h1>
+        <p class="site-subtitle">News podcast &amp; video about Adarsh Upadhyaya · King of San Ramon · Quarry Lane High School</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link" data-page="home">News Outlet</a>
+        <a href="adarsh.html" class="nav-link" data-page="adarsh">Adarsh</a>
+        <a href="lore.html" class="nav-link" data-page="lore">Lore</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container adarsh-main">
+    <section class="adarsh-hero">
+      <p class="story-category">Now Playing</p>
+      <h2 class="featured-headline" id="show-tagline">Loading show…</h2>
+    </section>
+
+    <section id="featured-episode" class="featured-episode">
+      <div class="loading">Loading episode…</div>
+    </section>
+
+    <section class="adarsh-episodes-section">
+      <h2 class="section-title">All Episodes · May 2026</h2>
+      <div class="adarsh-episode-list" id="episode-list"></div>
+    </section>
+
+    <section class="adarsh-about">
+      <h2 class="section-title">About This Show</h2>
+      <p><strong>Adarsh</strong> is the broadcast division of the Adarsh News Outlet — a separate page for podcast audio and optional AI-generated video about the King of San Ramon. Episodes are produced locally with text-to-speech narration and optional <a href="https://github.com/zai-org/CogVideo" target="_blank" rel="noopener">CogVideo</a> visuals.</p>
+      <p class="sidebar-note">Generate episodes: <code>python generate_adarsh_episode.py --episode 1</code></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Adarsh · A division of The Adarsh News Outlet</p>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/adarsh.js"></script>
+</body>
+</html>

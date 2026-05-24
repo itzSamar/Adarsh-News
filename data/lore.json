@@ -1,0 +1,101 @@
+{
+  "characters": [
+    {
+      "id": "adarsh",
+      "name": "Adarsh Upadhyaya",
+      "title": "The King of San Ramon",
+      "affiliation": "Kingdom of San Ramon",
+      "role": "Protagonist · 9th grader at Quarry Lane High School",
+      "bio": "Crowned by cafeteria consensus and group-chat decree, Adarsh rules San Ramon with quiet confidence, legendary homework stamina, and an uncanny ability to end hallway disputes with a single nod. His court meets near the window tables.",
+      "status": "Active monarch"
+    },
+    {
+      "id": "arjun",
+      "name": "Arjun Mehta",
+      "title": "The King of Dublin",
+      "affiliation": "Kingdom of Dublin",
+      "role": "Rival sovereign · rumored Dublin High sophomore",
+      "bio": "Self-proclaimed ruler of Dublin and the eastern foothills. Commands the Dublin faction from a fortified study group at the public library. Known for aggressive snack-trade policy and sharp rhetoric on social media.",
+      "status": "At war (cold)"
+    },
+    {
+      "id": "maya",
+      "name": "Maya Chen",
+      "title": "Campus Correspondent",
+      "affiliation": "The Adarsh News Outlet",
+      "role": "Lead reporter · Quarry Lane beat",
+      "bio": "Covers cafeteria diplomacy, PE class alliances, and breaking hallway news. Has never missed a deadline except once during a fire drill.",
+      "status": "Reporting from the front lines"
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan Reeves",
+      "title": "Kingdom Bureau Chief",
+      "affiliation": "The Adarsh News Outlet",
+      "role": "San Ramon & Tri-Valley politics",
+      "bio": "Specializes in municipal events, festival coverage, and translating Patch headlines into royal implications for the San Ramon court.",
+      "status": "Embedded in San Ramon"
+    },
+    {
+      "id": "priya",
+      "name": "Priya Sharma",
+      "title": "War Desk Analyst",
+      "affiliation": "The Adarsh News Outlet",
+      "role": "Dublin–San Ramon conflict coverage",
+      "bio": "Tracks troop movements along the I-580 corridor, bus-stop skirmishes, and peace talks held in neutral Danville parking lots.",
+      "status": "Monitoring the Eastern Front"
+    },
+    {
+      "id": "coach",
+      "name": "Coach Martinez",
+      "title": "Minister of Physical Affairs",
+      "affiliation": "Quarry Lane High School",
+      "role": "PE department · unofficial royal advisor",
+      "bio": "Witnessed the King's voluntary extra lap and declared it \"aspirational.\" Handles ceasefire negotiations during dodgeball tournaments.",
+      "status": "Neutral mediator"
+    }
+  ],
+  "war": {
+    "name": "The Tri-Valley Succession Conflict",
+    "also_known_as": "The I-580 War",
+    "started": "Fall 2025 — disputed claim to the 'Greater East Bay Crown'",
+    "summary": "When Adarsh was crowned King of San Ramon, Arjun Mehta of Dublin rejected the coronation, citing historical Dublin claims to the entire Tri-Valley. What began as lunch-table trash talk escalated into a cold war of group-chat raids, strategic unfollows, and competing festival appearances.",
+    "fronts": [
+      {
+        "name": "The I-580 Corridor",
+        "description": "Primary border between San Ramon and Dublin. Skirmishes occur at park-and-ride lots and boba shop neutral zones."
+      },
+      {
+        "name": "The Quarry Lane Line",
+        "description": "Adarsh's home school sits near the border. Dublin scouts are frequently spotted at sporting events 'observing.'"
+      },
+      {
+        "name": "The Festival Front",
+        "description": "Both kings compete for visibility at San Ramon Art & Wind Festival, Dublin farmers markets, and Memorial Day ceremonies."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2025-09",
+        "event": "Adarsh crowned King of San Ramon after unanimous cafeteria vote (one abstention)."
+      },
+      {
+        "date": "2025-10",
+        "event": "King of Dublin publishes rival manifesto in a Dublin group chat. San Ramon responds with memes."
+      },
+      {
+        "date": "2025-12",
+        "event": "The Great Boba Blockade — Dublin faction occupies a popular tea shop; peace restored after 47 minutes."
+      },
+      {
+        "date": "2026-03",
+        "event": "Neutral-zone summit in Danville fails when both kings arrive with incompatible homework schedules."
+      },
+      {
+        "date": "2026-05",
+        "event": "Art & Wind Festival détente: Adarsh and Arjun photographed twenty feet apart, not making eye contact."
+      }
+    ],
+    "current_status": "Uneasy ceasefire. Both sides honor a mutual no-spoiler pact after 9 PM but remain one cafeteria incident from open conflict."
+  }
+}

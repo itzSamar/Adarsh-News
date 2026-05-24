@@ -1,5 +1,31 @@
 {
+  "patch_fetched_at": "2026-05-24T23:35:00Z",
+  "patch_headlines": [
+    {"title": "San Ramon Art & Wind Festival: What To Know"},
+    {"title": "San Ramon Art & Wind Festival Returns This Weekend"},
+    {"title": "San Ramon May 18 Weekly Update"},
+    {"title": "San Ramon Hosting Memorial Day Celebration At Memorial Park"},
+    {"title": "San Ramon, SRVUSD Students Named National Merit Scholars"},
+    {"title": "Third Thursday Arts & Eats Debuts In San Ramon"},
+    {"title": "San Ramon Council To View FY26-27 Preliminary Budget"}
+  ],
   "stories": [
+    {
+      "id": "2026-05-25-wind-festival",
+      "date": "2026-05-25",
+      "headline": "King of San Ramon to Attend Art & Wind Festival Under Heavy Security",
+      "dek": "Royal entourage confirms kite diplomacy amid Dublin spy rumors.",
+      "category": "local",
+      "byline": "Jordan Reeves, Kingdom Bureau Chief",
+      "patch_source": "https://patch.com/california/sanramon",
+      "patch_headline": "San Ramon Art & Wind Festival Returns This Weekend",
+      "body": [
+        "Following coverage in Patch San Ramon of this weekend's Art & Wind Festival, Adarsh Upadhyaya's court announced the King will make a public appearance — his first at a municipal event since the I-580 ceasefire talks stalled in Danville.",
+        "Sources say Adarsh plans to evaluate the professionally choreographed kite demonstrations for 'strategic aerial potential,' while avoiding any direct line of sight with Dublin scouts rumored to be posing as funnel-cake vendors. The King of Dublin, Arjun Mehta, has not commented, though his group chat status remains aggressively online.",
+        "Festival organizers told reporters they welcome all attendees, royal or otherwise, provided no one tries to crown anyone near the face-painting booth. Security will be handled by volunteers, one parent, and Coach Martinez, who said he 'has dodgeballs if needed.'"
+      ],
+      "generated_at": "2026-05-25T12:00:00Z"
+    },
     {
       "id": "2026-05-24-cafeteria-summit",
       "date": "2026-05-24",

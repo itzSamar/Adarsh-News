@@ -1,0 +1,62 @@
+{
+  "show": "Adarsh",
+  "tagline": "The King's broadcast — news, lore, and royal analysis",
+  "episodes": [
+    {
+      "id": "ep1-intro",
+      "episode": 1,
+      "date": "2026-05-01",
+      "title": "Who Is the King of San Ramon?",
+      "description": "Pilot episode introducing Adarsh Upadhyaya, Quarry Lane High School, and the royal court.",
+      "script": "Welcome to Adarsh — the broadcast arm of the Adarsh News Outlet. I'm your host, and today we're asking the question everyone in San Ramon is whispering: who exactly is the King of San Ramon? Adarsh Upadhyaya is a ninth grader at Quarry Lane High School. By cafeteria consensus and group chat decree, he holds the crown. This is satire, affection, and daily journalism — San Ramon edition. More episodes drop weekly.",
+      "audio_file": "adarsh/audio/ep1.wav",
+      "video_file": null,
+      "status": "ready",
+      "generated_at": "2026-05-24T23:48:28.807218Z"
+    },
+    {
+      "id": "ep2-war",
+      "episode": 2,
+      "date": "2026-05-08",
+      "title": "The Dublin War Explained",
+      "description": "A special report on the cold war between San Ramon and Dublin along the I-580 corridor.",
+      "script": "Episode two: the Dublin war. Arjun Mehta, the self-proclaimed King of Dublin, rejected Adarsh's coronation. What started as lunch table trash talk became a cold war of group chat raids and competing festival appearances. Analysts say the Art and Wind Festival may be the next flashpoint. We'll keep you posted from the Adarsh Briefing Room.",
+      "audio_file": null,
+      "video_file": null,
+      "status": "pending"
+    },
+    {
+      "id": "ep3-patch",
+      "episode": 3,
+      "date": "2026-05-15",
+      "title": "San Ramon Dispatch",
+      "description": "Real local headlines from Patch San Ramon — with royal commentary.",
+      "script": "San Ramon dispatch. This week in real local news: the Art and Wind Festival returns, Memorial Day ceremonies at Memorial Park, and Third Thursday Arts and Eats debuts. Our kingdom bureau asks — will the King attend in an official capacity? Stay tuned to the Adarsh News Outlet for satirical spin on every headline.",
+      "audio_file": null,
+      "video_file": null,
+      "status": "pending"
+    },
+    {
+      "id": "ep4-campus",
+      "episode": 4,
+      "date": "2026-05-22",
+      "title": "Campus Beat: Quarry Lane",
+      "description": "Hallway politics, PE heroics, and cafeteria diplomacy from Quarry Lane High School.",
+      "script": "Campus beat from Quarry Lane. Sources report the King finished lunch and homework in the same period — a feat the student council called aspirational. Coach Martinez confirms an extra lap around the track caused a cascade effect in PE class. This has been Adarsh, your podcast for royal school news.",
+      "audio_file": null,
+      "video_file": null,
+      "status": "pending"
+    },
+    {
+      "id": "ep5-peace",
+      "episode": 5,
+      "date": "2026-05-29",
+      "title": "Ceasefire Special",
+      "description": "Can San Ramon and Dublin make peace before summer?",
+      "script": "Season finale — ceasefire special. Neutral zone reporters say both kings were photographed twenty feet apart at the Art and Wind Festival, not making eye contact. Diplomats call it progress. Group chats call it awkward. From everyone at the Adarsh News Outlet — thanks for listening. Long live the King of San Ramon.",
+      "audio_file": null,
+      "video_file": null,
+      "status": "pending"
+    }
+  ]
+}

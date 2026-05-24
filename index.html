@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
 </head>
-<body>
+<body data-page="home">
   <div class="top-bar">
     <div class="container top-bar-inner">
       <span class="date-display" id="today-date"></span>
@@ -28,17 +28,29 @@
         <p class="site-subtitle">Exclusive Coverage of Adarsh Upadhyaya · Quarry Lane High School · The King of San Ramon</p>
       </div>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="#featured" class="nav-link active">Front Page</a>
-        <a href="#latest" class="nav-link">Latest</a>
-        <a href="#about" class="nav-link">About the King</a>
-        <a href="#archive" class="nav-link">Archive</a>
+        <a href="index.html" class="nav-link" data-page="home">Front Page</a>
+        <a href="adarsh.html" class="nav-link" data-page="adarsh">Adarsh</a>
+        <a href="lore.html" class="nav-link" data-page="lore">Lore</a>
+        <a href="#latest" class="nav-link" data-page="home">Latest</a>
+        <a href="#about" class="nav-link" data-page="home">About</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
+    <section id="real-news" class="real-news-section" aria-labelledby="real-news-heading">
+      <div class="section-header-row">
+        <h2 id="real-news-heading" class="section-title">San Ramon Headlines</h2>
+        <a class="wire-source" href="https://patch.com/california/sanramon" target="_blank" rel="noopener">Source: Patch San Ramon ↗</a>
+      </div>
+      <p class="section-note">Real local news from San Ramon. Our royal coverage below is satirical fan journalism.</p>
+      <ul class="real-news-list" id="real-news-list">
+        <li class="loading">Loading San Ramon wire…</li>
+      </ul>
+    </section>
+
     <section id="featured" class="featured-section" aria-labelledby="featured-heading">
-      <h2 id="featured-heading" class="sr-only">Featured Story</h2>
+      <h2 id="featured-heading" class="section-title">Royal Coverage <span class="section-sub">(Satirical)</span></h2>
       <article class="featured-article" id="featured-article">
         <div class="loading">Loading today's headline…</div>
       </article>
@@ -46,15 +58,15 @@
 
     <div class="content-grid">
       <section id="latest" class="latest-section" aria-labelledby="latest-heading">
-        <h2 id="latest-heading" class="section-title">Latest Headlines</h2>
+        <h2 id="latest-heading" class="section-title">More Headlines</h2>
         <div class="story-list" id="story-list"></div>
       </section>
 
       <aside class="sidebar">
         <div class="sidebar-box about-preview" id="about">
           <h3>About the Subject</h3>
-          <p><strong>Adarsh Upadhyaya</strong> is a 9th-grade student at Quarry Lane High School and the reigning <em>King of San Ramon</em> — a title conferred by neighborhood consensus, cafeteria witnesses, and at least one overheard group chat.</p>
-          <p class="sidebar-note">This outlet provides rigorous, daily journalism on His Majesty's activities, opinions, and legendary status.</p>
+          <p><strong>Adarsh Upadhyaya</strong> is a 9th-grade student at Quarry Lane High School and the reigning <em>King of San Ramon</em>. His rival <strong>Arjun Mehta</strong>, the <em>King of Dublin</em>, threatens the I-580 peace. <a href="lore.html">Read the full lore →</a></p>
+          <p class="sidebar-note">Watch the separate broadcast at <a href="adarsh.html">Adarsh →</a></p>
         </div>
 
         <div class="sidebar-box stats-box">
@@ -82,11 +94,12 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> The Adarsh News Outlet. All stories are satirical fan journalism.</p>
-      <p class="footer-note">Quarry Lane High School · San Ramon, CA · Kingdom of San Ramon</p>
+      <p>&copy; <span id="year"></span> The Adarsh News Outlet. Satirical fan journalism — not real news.</p>
+      <p class="footer-note">Quarry Lane High School · San Ramon, CA · <a href="adarsh.html" class="footer-link">Adarsh broadcast →</a></p>
     </div>
   </footer>
 
+  <script src="js/site.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

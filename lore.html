@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lore — The Adarsh News Outlet</title>
+  <meta name="description" content="The complete lore of the Kingdom of San Ramon, the King of Dublin, and the I-580 War.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+</head>
+<body data-page="lore">
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span class="date-display" id="today-date"></span>
+      <span class="tagline">Serving San Ramon Since Day One</span>
+      <span class="edition">Lore &amp; Archives</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="masthead">
+        <p class="masthead-kicker">World Building · Canon Database</p>
+        <h1 class="site-title">The Adarsh News Outlet</h1>
+        <p class="site-subtitle">Kingdom Lore · Characters · The Dublin War</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link" data-page="home">Front Page</a>
+        <a href="adarsh.html" class="nav-link" data-page="adarsh">Adarsh</a>
+        <a href="lore.html" class="nav-link" data-page="lore">Lore</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container lore-page">
+    <section class="lore-hero" id="war">
+      <p class="story-category">Breaking Lore</p>
+      <h2 class="featured-headline" id="war-name">Loading conflict data…</h2>
+      <p class="featured-dek" id="war-summary"></p>
+      <p class="lore-status"><strong>Current status:</strong> <span id="war-status"></span></p>
+    </section>
+
+    <section class="lore-section">
+      <h2 class="section-title">Active Fronts</h2>
+      <div class="lore-grid" id="war-fronts"></div>
+    </section>
+
+    <section class="lore-section">
+      <h2 class="section-title">War Timeline</h2>
+      <ol class="timeline" id="war-timeline"></ol>
+    </section>
+
+    <section class="lore-section">
+      <h2 class="section-title">Key Figures</h2>
+      <div class="character-grid" id="characters"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> The Adarsh News Outlet. All lore is satirical fan fiction.</p>
+      <p class="footer-note">San Ramon · Dublin · The I-580 Corridor</p>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/lore.js"></script>
+</body>
+</html>

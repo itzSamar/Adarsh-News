@@ -444,3 +444,465 @@ body {
     display: none;
   }
 }
+
+/* Patch badge & feed */
+.patch-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.patch-badge a {
+  color: var(--accent);
+}
+
+.patch-feed {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.patch-feed li {
+  padding: 0.45rem 0;
+  border-bottom: 1px dotted var(--border);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.patch-feed li:last-child {
+  border-bottom: none;
+}
+
+.patch-feed a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.patch-feed a:hover {
+  color: var(--accent);
+}
+
+.sidebar a {
+  color: var(--accent);
+}
+
+/* Lore page */
+.lore-page {
+  padding-bottom: 3rem;
+}
+
+.lore-hero {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px var(--shadow);
+}
+
+.lore-status {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+}
+
+.lore-section {
+  margin-bottom: 2.5rem;
+}
+
+.lore-grid,
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.lore-card,
+.character-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+}
+
+.lore-card h3,
+.character-card h3 {
+  font-family: var(--font-serif);
+  margin: 0.35rem 0 0.5rem;
+}
+
+.character-title {
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.35rem;
+}
+
+.character-role {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin: 0 0 0.75rem;
+}
+
+.character-status {
+  font-size: 0.85rem;
+  margin: 0.75rem 0 0;
+}
+
+.character-card--rival {
+  border-left: 4px solid var(--accent-dark);
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 3px solid var(--border);
+}
+
+.timeline-item {
+  padding: 0 0 1.25rem 1.25rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 0.35rem;
+  width: 11px;
+  height: 11px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.timeline-date {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+/* Content / video page */
+.content-page {
+  padding-bottom: 3rem;
+}
+
+.content-hero {
+  margin-bottom: 2rem;
+}
+
+.featured-video-section {
+  margin-bottom: 2.5rem;
+}
+
+.video-wrap {
+  background: #000;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.video-wrap video {
+  width: 100%;
+  display: block;
+  max-height: 520px;
+}
+
+.video-feature {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px var(--shadow);
+}
+
+.video-placeholder {
+  background: linear-gradient(135deg, #1a1a1a 0%, #3d3d3d 100%);
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.placeholder-label {
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.video-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.show-notes {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.video-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.15s;
+  overflow: hidden;
+}
+
+.video-card:hover {
+  box-shadow: 0 3px 16px var(--shadow);
+  transform: translateY(-1px);
+}
+
+.video-card--active {
+  border-color: var(--accent);
+}
+
+.video-thumb {
+  aspect-ratio: 16 / 9;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+.video-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-thumb--pending {
+  background: linear-gradient(135deg, #2a2a2a, #444);
+}
+
+.video-card-body {
+  padding: 1rem 1.15rem 1.15rem;
+}
+
+.video-card-body h4 {
+  font-family: var(--font-serif);
+  margin: 0.35rem 0;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.footer-link {
+  color: #8a8680;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+/* Real San Ramon news wire */
+.real-news-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px double var(--border);
+}
+
+.section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.wire-source {
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.section-note {
+  font-size: 0.92rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  margin: 0 0 1.25rem;
+}
+
+.section-sub {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.real-news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.real-news-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  padding: 1rem 1.25rem;
+}
+
+.real-news-cat {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.real-news-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  margin: 0.35rem 0;
+}
+
+.real-news-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.real-news-title a:hover {
+  color: var(--accent);
+}
+
+.real-news-summary {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-muted);
+}
+
+/* Adarsh broadcast page */
+.adarsh-page {
+  background: #0f1419;
+  color: #e8e4dc;
+  background-image: linear-gradient(180deg, #1a2332 0%, #0f1419 100%);
+}
+
+.adarsh-top {
+  background: #0a0e14;
+}
+
+.adarsh-header {
+  border-bottom-color: #333;
+  background: linear-gradient(to bottom, #1a2332 0%, #0f1419 100%);
+}
+
+.adarsh-header .site-title,
+.adarsh-header .site-subtitle,
+.adarsh-header .masthead-kicker {
+  color: #e8e4dc;
+}
+
+.adarsh-logo {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  letter-spacing: 0.08em;
+}
+
+.adarsh-main .section-title,
+.adarsh-main .featured-headline {
+  color: #f5f0e6;
+}
+
+.episode-feature {
+  background: #1a2332;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.episode-pending {
+  background: #252d3a;
+  padding: 1rem;
+  border-radius: 2px;
+  font-size: 0.9rem;
+}
+
+.episode-script {
+  margin: 1.25rem 0 0;
+  padding: 1rem;
+  border-left: 3px solid var(--gold);
+  font-style: italic;
+  color: #b8b4ac;
+  font-size: 0.95rem;
+}
+
+.media-wrap audio,
+.media-wrap video {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.adarsh-episode-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.episode-row {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  background: #1a2332;
+  border: 1px solid #333;
+  padding: 1rem;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.episode-row:hover,
+.episode-row--active {
+  border-color: var(--gold);
+}
+
+.ep-num {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.episode-row h4 {
+  margin: 0 0 0.25rem;
+  font-family: var(--font-serif);
+  color: #f5f0e6;
+}
+
+.episode-row p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #b8b4ac;
+}
+
+.ep-status {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+}
+
+.adarsh-about {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+  color: #b8b4ac;
+}
+
+.adarsh-about a {
+  color: var(--gold);
+}
