@@ -11,6 +11,70 @@
   ],
   "stories": [
     {
+      "id": "2026-05-29-budget-council",
+      "date": "2026-05-29",
+      "headline": "Adarsh Orders Royal Audit After San Ramon Council Previews FY26-27 Budget",
+      "dek": "The King of San Ramon says every kingdom needs fiscal discipline, especially one funded mostly by cafeteria coins.",
+      "category": "local",
+      "byline": "Priya Sharma, Budget Desk",
+      "patch_source": "https://patch.com/california/sanramon",
+      "patch_headline": "San Ramon Council To View FY26-27 Preliminary Budget",
+      "body": [
+        "After Patch reported that San Ramon officials would review the city's preliminary FY26-27 budget, Adarsh Upadhyaya announced that the Kingdom of San Ramon would conduct its own parallel audit from a notebook labeled 'Important Royal Stuff.'",
+        "The 9th grader's finance team, consisting of two classmates and a calculator app, identified several priorities: defense against Dublin, emergency boba reserves, and a line item titled 'mysterious but necessary snacks.' Adarsh reportedly asked whether Measure N could be adapted into Measure A, for Adarsh, before being told that is not how municipal finance works.",
+        "The King of Dublin immediately accused San Ramon of overspending on ceremonial pens, escalating tensions along the I-580 corridor. Adarsh's office responded that all pens were 'essential infrastructure' and promised a balanced budget by the end of lunch."
+      ],
+      "generated_at": "2026-05-24T20:18:00Z"
+    },
+    {
+      "id": "2026-05-28-national-merit-court",
+      "date": "2026-05-28",
+      "headline": "King Congratulates San Ramon National Merit Scholars, Declares Brainpower Strategic Asset",
+      "dek": "Adarsh praises local academic excellence while quietly asking if scholarships can be paid in royal influence.",
+      "category": "campus",
+      "byline": "Maya Chen, Education Correspondent",
+      "patch_source": "https://patch.com/california/sanramon",
+      "patch_headline": "San Ramon, SRVUSD Students Named National Merit Scholars",
+      "body": [
+        "Following Patch's report that San Ramon and SRVUSD students were named National Merit Scholars, Adarsh Upadhyaya issued a formal statement applauding the winners and inviting them to advise the royal court on finals-week survival.",
+        "Sources say Adarsh was especially interested in their study methods, asking whether a color-coded planner could defeat the King of Dublin in open academic combat. The scholars declined to enter the I-580 War but did recommend sleeping before tests, a suggestion the court described as 'radical but intriguing.'",
+        "By afternoon, the Kingdom of San Ramon had created a new advisory council called the Merit Table. Its first agenda item was congratulating the winners; its second was figuring out how to make Adarsh's backpack less loud during math."
+      ],
+      "generated_at": "2026-05-24T20:18:00Z"
+    },
+    {
+      "id": "2026-05-27-third-thursday-arts-eats",
+      "date": "2026-05-27",
+      "headline": "Third Thursday Arts & Eats Becomes Royal Cultural Program After Adarsh Endorsement",
+      "dek": "Food trucks, local art, and live music are now officially part of the San Ramon soft-power strategy.",
+      "category": "lifestyle",
+      "byline": "Jordan Reeves, Culture Bureau",
+      "patch_source": "https://patch.com/california/sanramon",
+      "patch_headline": "Third Thursday Arts & Eats Debuts In San Ramon",
+      "body": [
+        "After Patch covered the debut of Third Thursday Arts & Eats in San Ramon, Adarsh Upadhyaya declared the summer series a 'cultural victory' for the kingdom and asked whether his court could reserve a table near the most strategic taco truck.",
+        "The event's mix of food trucks, local art, live music, and hands-on activities reportedly appealed to the King's entire governing philosophy: snacks first, diplomacy second, vibes always. Advisors believe the series could help San Ramon project cultural strength without directly provoking Dublin.",
+        "The King of Dublin attempted to respond by announcing a rival 'Fourth Friday Chips & Arguments,' but attendance projections remain unclear. Adarsh's camp says it will monitor the situation closely while supporting local artists and possibly ordering churros."
+      ],
+      "generated_at": "2026-05-24T20:18:00Z"
+    },
+    {
+      "id": "2026-05-26-memorial-day-field",
+      "date": "2026-05-26",
+      "headline": "Adarsh Calls For Respectful Silence At San Ramon Memorial Day Ceremony",
+      "dek": "The royal court pauses jokes to honor the real purpose of Memorial Day at Memorial Park.",
+      "category": "local",
+      "byline": "The San Ramon Gazette Staff",
+      "patch_source": "https://patch.com/california/sanramon",
+      "patch_headline": "San Ramon Hosting Memorial Day Celebration At Memorial Park",
+      "body": [
+        "After Patch reported that San Ramon would host a Memorial Day celebration at Memorial Park, Adarsh Upadhyaya reminded the Kingdom of San Ramon that not every public appearance is about royal drama.",
+        "The ceremony, featuring patriotic music, tributes, and a flag-placing ceremony at the Commemorative Field of Flags, was described by the King's office as 'a moment for respect, not lore.' Even the usually combative Dublin faction agreed to observe a temporary ceasefire for the day.",
+        "Adarsh reportedly told classmates that honoring service members matters more than any rivalry with Dublin. The statement was widely praised by the court, though one advisor admitted they still checked whether Arjun Mehta had subtweeted anything afterward."
+      ],
+      "generated_at": "2026-05-24T20:18:00Z"
+    },
+    {
       "id": "2026-05-25-wind-festival",
       "date": "2026-05-25",
       "headline": "King of San Ramon to Attend Art & Wind Festival Under Heavy Security",

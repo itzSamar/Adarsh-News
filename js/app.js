@@ -1,5 +1,5 @@
 /**
- * Main page: Patch wire + satirical stories + Adarsh podcast
+ * Main page: Patch-inspired Adarsh stories + podcast
  */
 
 const CATEGORY_LABELS = {
@@ -20,35 +20,11 @@ function excerpt(body, maxLen = 140) {
   return flat.slice(0, maxLen).trim() + '…';
 }
 
-function renderRealNews(items) {
-  const el = document.getElementById('real-news-list');
-  if (!el) return;
-  if (!items.length) {
-    el.innerHTML = '<li class="loading">No wire stories loaded.</li>';
-    return;
-  }
-  el.innerHTML = items
-    .slice(0, 6)
-    .map(
-      item => `
-      <li class="real-news-item">
-        <span class="real-news-cat">${NewsSite.escapeHtml(item.category || 'San Ramon')}</span>
-        <h3 class="real-news-title">
-          <a href="${NewsSite.escapeHtml(item.url || 'https://patch.com/california/sanramon')}" target="_blank" rel="noopener">
-            ${NewsSite.escapeHtml(item.title)}
-          </a>
-        </h3>
-        <p class="real-news-summary">${NewsSite.escapeHtml(item.summary)}</p>
-      </li>`
-    )
-    .join('');
-}
-
 function renderFeatured(story) {
   const el = document.getElementById('featured-article');
   const cat = CATEGORY_LABELS[story.category] || story.category;
   const patchBadge = story.patch_headline
-    ? `<p class="patch-badge">Spin on Patch: <em>${NewsSite.escapeHtml(story.patch_headline)}</em></p>`
+    ? `<p class="patch-badge">Based on a real Patch San Ramon headline: <em>${NewsSite.escapeHtml(story.patch_headline)}</em></p>`
     : '';
 
   el.innerHTML = `
@@ -232,24 +208,13 @@ async function loadPodcast() {
 
 async function init() {
   try {
-    const [storiesRes, patchRes] = await Promise.all([
-      fetch(NewsSite.asset('data/stories.json')),
-      fetch(NewsSite.asset('data/patch_news.json')),
-    ]);
-
+    const storiesRes = await fetch(NewsSite.asset('data/stories.json'));
     if (!storiesRes.ok) throw new Error('stories.json ' + storiesRes.status);
 
     const data = await storiesRes.json();
     const stories = normalizeStories(data.stories || []).sort(
       (a, b) => new Date(b.date) - new Date(a.date)
     );
-
-    if (patchRes.ok) {
-      const patch = await patchRes.json();
-      renderRealNews(patch.items || []);
-    } else {
-      renderRealNews(data.patch_headlines || []);
-    }
 
     if (!stories.length) {
       document.getElementById('featured-article').innerHTML =

@@ -708,27 +708,6 @@ body {
   color: #fff;
 }
 
-/* Real San Ramon news wire */
-.real-news-section {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 3px double var(--border);
-}
-
-.section-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.wire-source {
-  font-size: 0.85rem;
-  color: var(--accent);
-  text-decoration: none;
-}
-
 .section-note {
   font-size: 0.92rem;
   color: var(--ink-muted);
@@ -741,50 +720,6 @@ body {
   font-weight: 400;
   color: var(--ink-muted);
   font-style: italic;
-}
-
-.real-news-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 1rem;
-}
-
-.real-news-item {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--gold);
-  padding: 1rem 1.25rem;
-}
-
-.real-news-cat {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gold);
-}
-
-.real-news-title {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  margin: 0.35rem 0;
-}
-
-.real-news-title a {
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.real-news-title a:hover {
-  color: var(--accent);
-}
-
-.real-news-summary {
-  margin: 0;
-  font-size: 0.92rem;
-  color: var(--ink-muted);
 }
 
 /* Adarsh broadcast page */

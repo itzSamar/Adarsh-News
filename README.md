@@ -6,20 +6,17 @@ Live: [itzSamar.github.io/Adarsh-News](https://itzSamar.github.io/Adarsh-News/)
 
 | Page | File | What it is |
 |------|------|------------|
-| News Outlet | `index.html` | Real San Ramon headlines (Patch) + satirical Adarsh stories |
-| **Adarsh** | `adarsh.html` | Separate podcast/broadcast page about Adarsh |
+| News Outlet | `index.html` | Satirical Adarsh stories based on real San Ramon/Patch headlines |
+| **Podcast** | `index.html#podcast` | Adarsh podcast audio on the same page |
 | Lore | `lore.html` | King of Dublin war, characters, timeline |
 
 ## Fix for "Could not load stories"
 
-Stories load via `new URL('data/stories.json', document.baseURI)` — no fragile base-path logic. **Push all files** including `js/site.js` and `data/patch_news.json`.
+Stories load via `new URL('data/stories.json', document.baseURI)` — no fragile base-path logic. **Push all files** including `js/site.js`.
 
-## Real San Ramon news
+## Real News + Adarsh Stories
 
-```bash
-python sync_patch_news.py   # refresh from Patch San Ramon
-git add data/patch_news.json && git push
-```
+Stories in `data/stories.json` include `patch_headline` when they are based on real Patch San Ramon items. The site shows those as Adarsh stories, not as a separate raw news feed.
 
 ## Satirical stories (Ollama)
 
@@ -41,5 +38,5 @@ Optional video: clone [CogVideo](https://github.com/zai-org/CogVideo), set `COGV
 GitHub Pages → **main** branch → **/ (root)**
 
 ```bash
-git add . && git commit -m "Fix stories, add Adarsh page, Patch wire" && git push
+git add . && git commit -m "Combine real news with Adarsh stories" && git push
 ```
